@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- เงื่อนไข 2: แท็บเบราว์เซอร์ชื่อ Basics -->
+    <title>Basics</title>
+    <style>
+        /* เงื่อนไข 1: พื้นหลังสีชมพู (CSS Named Color: pink) */
+        body {
+            background-color: pink;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* เงื่อนไข 3: หัวข้อขนาดใหญ่ สีขาว จัดกึ่งกลาง และมีอักขระพิเศษ (&, !) */
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3.5rem;
+        }
+
+        /* เงื่อนไข 4: รูปสองรูปวางข้างกัน */
+        .shop-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 40px 0;
+        }
+
+        .shop-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .shop-item img {
+            width: 220px;
+            height: 140px;
+            object-fit: contain;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        /* เงื่อนไข 5: ลิงก์ใต้รูปภาพไปยังเว็บไซต์ของร้าน */
+        .shop-item a {
+            margin-top: 12px;
+            font-size: 1.1rem;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        /* เงื่อนไข 6: เส้นคั่นแนวนอนเต็มความกว้างหน้าจอ */
+        hr {
+            width: 100%;
+            border: 0;
+            border-top: 2px solid #333;
+            margin-top: 40px;
+        }
+
+        /* เงื่อนไข 7: ชิดขวา, ตัวเอียง, ฟอนต์ monospace, © login 2026 */
+        .footer {
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>^Online book shops^</h1>
+
+    <div class="shop-container">
+        <div class="shop-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiinlAchmic492KPyZYHdBY0K8YCjUFQE0_Vu-3dSsw&s=10" alt="">
+            <a href="https://www.naiin.com/" target="_blank">Visit Naiin</a>
+        </div>
+        <div class="shop-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgZeVTHXznUKFQw5YPc89C3Jzg86y7Y1gwEBwhPslew&s=10" alt="">
+            <a href="https://www.b2s.co.th/" target="_blank">Visit B2S</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        &copy; phprpmth 2026
+    </div>
+
+</body>
+</html>
